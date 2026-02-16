@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [\App\Http\Controllers\Public\ResultVerificationController::class, 'showHome'])->name('public.home');
-Route::post('/', [\App\Http\Controllers\Public\ResultVerificationController::class, 'verifyHome'])->name('public.home.verify');
+Route::get('/Salu.university-edu-pk-result-verification', [\App\Http\Controllers\Public\ResultVerificationController::class, 'showHome'])->name('public.home');
+Route::post('/Salu.university-edu-pk-result-verification', [\App\Http\Controllers\Public\ResultVerificationController::class, 'verifyHome'])->name('public.home.verify');
 
 Route::get('/verify', [\App\Http\Controllers\Public\ResultVerificationController::class, 'showForm'])->name('public.verify.form');
 Route::post('/verify', [\App\Http\Controllers\Public\ResultVerificationController::class, 'verify'])->name('public.verify');
