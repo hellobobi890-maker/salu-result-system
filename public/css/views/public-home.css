@@ -1,0 +1,200 @@
+/* =============================================
+   PUBLIC HOME - Result Verification Page
+   Matches exact screenshot design
+   ============================================= */
+
+/* --- Page Background --- */
+.result-page {
+    background: #D1DFDD;
+    padding: 0;
+}
+
+/* --- Spinner Overlay --- */
+.spinner-overlay {
+    display: none;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.spinner-overlay img {
+    width: 60px;
+    height: 60px;
+}
+
+.spinner-overlay.active {
+    display: block;
+}
+
+/* --- University Header --- */
+.uni-header {
+    padding: 10px;
+}
+
+.uni-logo {
+    max-width: 190px;
+    margin: 0 auto;
+}
+
+.uni-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.uni-title {
+    font-family: "Roboto", Sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #EDA32D;
+    margin-top: 10px;
+}
+
+.uni-subtitle {
+    font-family: "Roboto", Sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #131313;
+}
+
+/* --- Form Wrapper --- */
+.form-wrapper {
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+/* --- Verification Card --- */
+.verify-card {
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 0;
+    padding: 10px;
+}
+
+/* --- Field Groups --- */
+.field-group {
+    margin-bottom: 14px;
+}
+
+.field-label {
+    font-size: 18px;
+    color: #7a7a7a;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+
+.field-input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    color: #000;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+}
+
+.field-input:focus {
+    border-color: #555;
+    box-shadow: none;
+}
+
+select.field-input {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23555' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 14px;
+    padding-right: 35px;
+    border-radius: 5px;
+}
+
+/* --- Result Button --- */
+.result-btn {
+    background-color: transparent;
+    border: 1px solid #c36;
+    border-radius: 3px;
+    color: #c36;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 15px;
+    text-align: center;
+    transition: all .3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+
+/* --- Error Message --- */
+.error-msg {
+    background: #f8d7da;
+    color: #842029;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid #f1aeb5;
+    margin-bottom: 14px;
+}
+
+/* --- No Result Message --- */
+.no-result-msg {
+    background: #fff3cd;
+    color: #664d03;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid #ffe69c;
+    margin-top: 18px;
+}
+
+/* --- Result Table --- */
+.result-table-wrap {
+    margin-top: 18px;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.result-table td {
+    padding: 8px 12px;
+    border: 1px solid #999;
+    vertical-align: top;
+}
+
+.result-table .label-cell {
+    width: 40%;
+    color: #333;
+    font-weight: normal;
+    background: transparent;
+}
+
+.result-table .value-cell {
+    width: 60%;
+    color: #333;
+    background: transparent;
+}
+
+/* --- Responsive --- */
+@media (max-width: 576px) {
+    .uni-title {
+        font-size: 18px;
+    }
+
+    .uni-subtitle {
+        font-size: 16px;
+    }
+
+    /* .verify-card {
+        padding: 18px 16px;
+    } */
+
+    .form-wrapper {
+        padding: 0 12px 30px;
+    }
+}
