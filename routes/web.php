@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/edu-pk-result-verification');
+
 Route::get('/edu-pk-result-verification', [\App\Http\Controllers\Public\ResultVerificationController::class, 'showHome'])->name('public.home');
 Route::post('/edu-pk-result-verification', [\App\Http\Controllers\Public\ResultVerificationController::class, 'verifyHome'])->name('public.home.verify');
 
